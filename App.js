@@ -1,29 +1,28 @@
 import React from 'react';
 import {StyleSheet, View, Image, ImageBackground } from 'react-native';
+import Home from './screens/Home';
 
 export default class App extends React.Component {
-  state = {
-    like: false,
-  };
 
   render() {
-    return (
-      <View style={styles.appContainer}>
-        <ImageBackground
-          source={remoteImage}
-          style={styles.videoContainer}
-          resizeMode="contain">
-          <View style={styles.controlsContainer}>
-            <Image source={volumeIcon} style={styles.icon} />
-            <View style={styles.progress}>
-              <View style={styles.progressBar} />
-            </View>
-            <Image source={hdIcon} style={styles.icon} />
-            <Image source={fullScreenIcon} style={styles.icon} />
-          </View>
-        </ImageBackground>
-      </View>
-    );
+    return <Home />;
+    // return (
+    //   <View style={styles.appContainer}>
+    //     <ImageBackground
+    //       source={remoteImage}
+    //       style={styles.videoContainer}
+    //       resizeMode="contain">
+    //       <View style={styles.controlsContainer}>
+    //         <Image source={volumeIcon} style={styles.icon} />
+    //         <View style={styles.progress}>
+    //           <View style={styles.progressBar} />
+    //         </View>
+    //         <Image source={hdIcon} style={styles.icon} />
+    //         <Image source={fullScreenIcon} style={styles.icon} />
+    //       </View>
+    //     </ImageBackground>
+    //   </View>
+    // );
   }
 }
 
