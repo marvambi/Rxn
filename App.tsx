@@ -5,10 +5,11 @@
  */
 const globalAny: any = global;
 
-import React from 'react';
+import React, { Component } from 'react';
+import Button from 'react-native-button';
+
 import {
   SafeAreaView,
-  Button,
   StyleSheet,
   ScrollView,
   View,
