@@ -50,7 +50,8 @@ const Home = () => {
                 {
                   title: 'Feedback Category',
                   message: 'Pick a category that applies!',
-                  options: ['Funding', 'Application', 'Official', 'Errors'],
+                  options: ['Cancel', 'Funding', 'Application', 'Official'],
+                  cancelButtonIndex: 0,
                 },
                 (buttonIndex) => {
                   console.log(buttonIndex);
@@ -58,15 +59,14 @@ const Home = () => {
               );
             }}
           />
-          {/* <Text
+          <View
             style={{
               fontSize: 30,
-              paddingBottom: 10,
+              paddingBottom: 30,
               paddingHorizontal: 10,
-              backgroundColor: 'orange',
-            }}>
-            React Native Videos
-          </Text> */}
+              backgroundColor: 'transparent',
+            }}
+          />
         </View>
       </Container>
     </>
