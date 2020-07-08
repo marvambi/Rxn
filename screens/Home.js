@@ -44,13 +44,13 @@ const Home = () => {
             </View>
           </ImageBackground>
           <Button
-            title="Open ActionSheetIOS"
+            title="Provide Feedback"
             onPress={() => {
               ActionSheetIOS.showActionSheetWithOptions(
                 {
-                  title: 'My Favorite Muppet',
-                  message: 'Pick one, human!',
-                  options: ['Fozzy', 'Gonzo', 'Kermit', 'Piggie'],
+                  title: 'Feedback Category',
+                  message: 'Pick a category that applies!',
+                  options: ['Funding', 'Application', 'Official', 'Errors'],
                 },
                 (buttonIndex) => {
                   console.log(buttonIndex);
