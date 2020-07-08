@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   StatusBar,
@@ -5,7 +6,7 @@ import {
   View,
   ImageBackground,
   Image,
-  Dimensions,
+  Text,
 } from 'react-native';
 import styled from 'styled-components/native';
 import Header from '../components/Header';
@@ -14,7 +15,7 @@ const Container = styled.View`
   flex: 1;
   background: transparent;
 `;
-const height = Dimensions.get('window');
+// const height = Dimensions.get('window');
 const Home = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const Home = () => {
         barStyle="light-content"
       />
       <Container>
-        <Header />
+        {/* <Header /> */}
         <View style={styles.appContainer}>
           <ImageBackground
             source={flower}
@@ -40,6 +41,15 @@ const Home = () => {
               <Image source={fullScreenIcon} style={styles.icon} />
             </View>
           </ImageBackground>
+          <Text
+            style={{
+              fontSize: 30,
+              paddingBottom: 10,
+              paddingHorizontal: 10,
+              backgroundColor: 'orange',
+            }}>
+            React Native Videos
+          </Text>
         </View>
       </Container>
     </>
