@@ -44,6 +44,7 @@ const Home = () => {
             </View>
           </ImageBackground>
           <Button
+            style={styles.likeIcon}
             title="Provide Feedback"
             onPress={() => {
               ActionSheetIOS.showActionSheetWithOptions(
@@ -58,7 +59,7 @@ const Home = () => {
               );
             }}
           />
-          <Text
+          {/* <Text
             style={{
               fontSize: 30,
               paddingBottom: 10,
@@ -66,7 +67,7 @@ const Home = () => {
               backgroundColor: 'orange',
             }}>
             React Native Videos
-          </Text>
+          </Text> */}
         </View>
       </Container>
     </>
