@@ -2,9 +2,11 @@
 import React from 'react';
 import {
   StatusBar,
+  Button,
   StyleSheet,
   View,
   ImageBackground,
+  ActionSheetIOS,
   Image,
   Text,
 } from 'react-native';
@@ -41,6 +43,21 @@ const Home = () => {
               <Image source={fullScreenIcon} style={styles.icon} />
             </View>
           </ImageBackground>
+          <Button
+            title="Open ActionSheetIOS"
+            onPress={() => {
+              ActionSheetIOS.showActionSheetWithOptions(
+                {
+                  title: 'My Favorite Muppet',
+                  message: 'Pick one, human!',
+                  options: ['Fozzy', 'Gonzo', 'Kermit', 'Piggie'],
+                },
+                (buttonIndex) => {
+                  console.log(buttonIndex);
+                },
+              );
+            }}
+          />
           <Text
             style={{
               fontSize: 30,
